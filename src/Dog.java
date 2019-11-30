@@ -8,12 +8,13 @@ public class Dog extends  Pet{
 
 
 
-    public Dog ( String name,String breed,String color, Shelter shelter, String commands){
+    public Dog ( String name,String breed, Shelter shelter, String commands){
+        super.setColor(Color.BLACK);
         this.name=name;
         this.breed=breed;
         this.commands=commands;
-        super.setColor(color);
-        super.setShelter(shelter);
+
+
 
     }
     Pet pet = new Pet();
@@ -23,11 +24,12 @@ public class Dog extends  Pet{
     }
 
 
-    public Dog (String name,String breed,String color, Shelter shelter){
+    public Dog (String name,String breed, Color color, Shelter shelter){
         this.breed=breed;
         this.name=name;
         super.setColor(color);
-        super.setShelter(shelter);
+
+
     }
     void makeVoice (){
         System.out.println("gav gav");
@@ -42,7 +44,7 @@ public class Dog extends  Pet{
         }
     }
     public String getInfo(){
-        return super.getInfo() +" "+ "Кличка :"+ name + "Порода :"+ breed + "Команда :" + commands;
+        return super.getInfo() +" "+ " Кличка :"+ name + " Порода :"+ breed + " Команда :" + commands;
     }
 
 }

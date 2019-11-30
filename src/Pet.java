@@ -2,46 +2,26 @@ import java.util.Random;
 
 public class Pet {
     private int age = generateDefaultAge();
-    private String color;
-    Shelter shelter = new Shelter("Ygg", "Bishek");
+    private Color color;
+    Shelter shelter;
 
 
 
-    public Pet(int age, String color, Shelter shelter) {
-        this.age = age;
-        this.color = color;
-        this.shelter = shelter;
-    }
 
     public Pet() {
     }
 
-    private int generateDefaultAge(){
+    private int generateDefaultAge() {
         Random r = new Random();
         int number = r.nextInt(20);
 
         return number;
     }
-    public String getInfo(){
-        return "Pet :" + age+" "+ "Color :"+ color+" " + "address :" +" "+ shelter.getAddress()+" " + shelter.getName()
-        ;
 
-    }
+    public String getInfo() {
+        return "Pet :" + age + " Цвет: "+color + " Адрес: " + getShelter() ;
 
-    public int getAge() {
-        return age;
-    }
 
-    public void setAge(int age) {
-        this.age = generateDefaultAge();
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public Shelter getShelter() {
@@ -51,4 +31,21 @@ public class Pet {
     public void setShelter(Shelter shelter) {
         this.shelter = shelter;
     }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = generateDefaultAge();
+    }
 }
+
