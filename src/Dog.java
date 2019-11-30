@@ -47,4 +47,27 @@ public class Dog extends  Pet{
         return super.getInfo() +" "+ " Кличка :"+ name + " Порода :"+ breed + " Команда :" + commands;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public String getCommands() {
+        return commands;
+    }
+
+    public void setCommands(String commands) {
+        this.commands = commands;
+    }
 }

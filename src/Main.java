@@ -6,6 +6,10 @@ public class Main {
 
 
         Dog dog = new Dog();
+        dog.setColor(Color.BLACK);
+        dog.setName("Jychka");
+        dog.setBreed("hunterdog");
+        dog.setCommands("Apport");
         dog.setShelter(shelter);
         System.out.println(dog.getInfo());
         dog.makeVoice();

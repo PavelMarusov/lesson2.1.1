@@ -19,7 +19,7 @@ public class Pet {
     }
 
     public String getInfo() {
-        return "Pet :" + age + " Цвет: "+color + " Адрес: " + getShelter() ;
+        return "Pet :" + age + " Цвет: "+color + " Адрес: " + shelter.getName() + " " + shelter.getAddress() ;
 
 
     }
