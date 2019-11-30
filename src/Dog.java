@@ -1,6 +1,6 @@
 import java.util.SortedMap;
 
-public class Dog extends  Pet{
+public final class Dog extends  Pet{
     private String name;
     private String breed;
     private String commands;
@@ -43,7 +43,7 @@ public class Dog extends  Pet{
 
         }
     }
-    public String getInfo(){
+     public final String getInfo(){
         return super.getInfo() +" "+ " Кличка :"+ name + " Порода :"+ breed + " Команда :" + commands;
     }
 
